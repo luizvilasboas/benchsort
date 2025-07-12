@@ -4,7 +4,7 @@ This is a tool for benchmarking the performance of different sorting algorithms.
 
 ## Demo
 
-![Demo of benchsort](https://gitlab.com/olooeez/benchsort/-/raw/main/img/demo.png)
+![Demo of benchsort](https://github.com/luizvilasboas/benchsort/blob/main/img/demo.png?raw=true)
 
 ## Usage
 
@@ -22,7 +22,7 @@ You can use the following options to use benchsort:
 To run benchsort, you must clone this repository with the following command:
 
 ```
-git clone https://gitlab.com/olooeez/benchsort.git
+git clone https://github.com/luizvilasboas/benchsort.git
 ```
 
 #### Enter the cloned repository
@@ -56,7 +56,7 @@ Finally use the command below to run the project:
 To run the program in a docker container, clone the repository to your machine first:
 
 ```
-git clone https://gitlab.com/olooeez/benchsort.git
+git clone https://github.com/luizvilasboas/benchsort.git
 ```
 
 #### Enter the cloned repository
@@ -89,4 +89,4 @@ If you would like to contribute to this project, please feel free to open a merg
 
 ## License
 
-This project is licensed under the [MIT](https://gitlab.com/olooeez/benchsort/-/blob/main/LICENSE) License. See the LICENSE file for details.
+This project is licensed under the [MIT](https://github.com/luizvilasboas/benchsort/blob/main/LICENSE) License. See the LICENSE file for details.
