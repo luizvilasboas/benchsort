@@ -1,92 +1,84 @@
 # benchsort
 
-This is a tool for benchmarking the performance of different sorting algorithms. It is written in C and provides a command-line interface for specifying the input size and the algorithms to be compared. It was made for a university project.
+> A C-based command-line tool for benchmarking the performance of different sorting algorithms.
 
-## Demo
+## About the Project
+
+This project was created for a university assignment to compare the performance of various sorting algorithms. It provides a CLI to specify the input size and which algorithms to compare, written entirely in C.
 
 ![Demo of benchsort](https://github.com/luizvilasboas/benchsort/blob/main/img/demo.png?raw=true)
 
+## Tech Stack
+
+The main technologies used in this project are:
+
+*   [C](https://en.wikipedia.org/wiki/C_(programming_language))
+*   [Make](https://www.gnu.org/software/make/)
+*   [Docker](https://www.docker.com/)
+
 ## Usage
 
-Below is how you can use benchsort. Feel free to fork or copy them, but be aware of the limitations that this repository license implies.
+You can run this project either directly on your machine or within a Docker container.
 
-You can use the following options to use benchsort:
+### Prerequisites
 
-1. [Run in your machine](#run-in-your-machine)
-2. [Run in a Docker container](#run-in-a-docker-container)
+*   For local execution: [GNU Make](https://www.gnu.org/software/make/)
+*   For containerized execution: [Docker](https://docs.docker.com/get-docker/)
 
-### Run in your machine
+### Installation and Setup (Local Machine)
 
-#### Clone the repo
+Follow the steps below:
 
-To run benchsort, you must clone this repository with the following command:
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/luizvilasboas/benchsort.git
+    ```
 
-```
-git clone https://github.com/luizvilasboas/benchsort.git
-```
+2.  **Navigate to the project directory**
+    ```bash
+    cd benchsort
+    ```
 
-#### Enter the cloned repository
+3.  **Compile the project**
+    ```bash
+    make
+    ```
 
-After cloning, you must enter the local repository using the following command:
+4.  **Run the application**
+    ```bash
+    ./bin/benchsort
+    ```
 
-```
-cd benchsort
-```
+### Installation and Setup (Docker)
 
-#### Use GNU Make to compile the project
+Follow the steps below:
 
-Install [GNU Make](https://gnu.org/software/make) on your system and run it with the command bellow:
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/luizvilasboas/benchsort.git
+    ```
 
-```
-make
-```
+2.  **Navigate to the project directory**
+    ```bash
+    cd benchsort
+    ```
 
-#### Run the project
+3.  **Build the Docker image**
+    ```bash
+    docker build -t olooeez/benchsort:latest .
+    ```
 
-Finally use the command below to run the project:
-
-```
-./bin/benchsort
-```
-
-### Run in a Docker container
-
-#### Clone the repo
-
-To run the program in a docker container, clone the repository to your machine first:
-
-```
-git clone https://github.com/luizvilasboas/benchsort.git
-```
-
-#### Enter the cloned repository
-
-After cloning, you must enter the local repository using the following command:
-
-```
-cd benchsort
-```
-
-#### Build the docker image
-
-Then, use the command below to build the Docker image:
-
-```
-docker build -t olooeez/benchsort:latest .
-```
-
-#### Run the image in a container
-
-Then, to run the image in a container, use the following command:
-
-```
-docker run -it --rm olooeez/benchsort:latest
-```
+4.  **Run the image in a container**
+    ```bash
+    docker run -it --rm olooeez/benchsort:latest
+    ```
 
 ## Contributing
 
-If you would like to contribute to this project, please feel free to open a merge request. All contributions are welcome!
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request.
 
 ## License
 
-This project is licensed under the [MIT](https://github.com/luizvilasboas/benchsort/blob/main/LICENSE) License. See the LICENSE file for details.
+This project is licensed under the MIT License. See the `LICENSE` file for details.
